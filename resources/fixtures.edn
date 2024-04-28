@@ -1,0 +1,3 @@
+;; Biff transaction. See https://biffweb.com/docs/reference/transactions/
+[{:db/doc-type :user
+  :xt/id :db.id/post-a} ]
