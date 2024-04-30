@@ -1,4 +1,4 @@
-(ns air.bi
+(ns air.bin
   (:require [com.biffweb :as biff]
             [air.bin.home :as home]
             [air.bin.middleware :as mid]
