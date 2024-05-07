@@ -22,9 +22,7 @@
       muuntaja/wrap-params
       muuntaja/wrap-format
       (rd/wrap-defaults (-> rd/site-defaults
-                            (assoc-in [:security :anti-forgery] false)
                             (assoc-in [:responses :absolute-redirects] true)
-                            (assoc :session false)
                             (assoc :static false)))))
 
 (defn wrap-api-defaults [handler]

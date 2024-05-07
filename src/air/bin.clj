@@ -12,11 +12,8 @@
             [nrepl.cmdline :as nrepl-cmd])
   (:gen-class))
 
-(def modules
-  [(biff/authentication-module {})
-   home/module
-   schema/module])
-
+(def modules [home/module 
+              schema/module])
 
 (def routes [["" {:middleware [mid/wrap-site-defaults]}
               (keep :routes modules)]
@@ -86,5 +83,4 @@
   (doseq [f (:biff/stop @system)]
     (log/info "stopping:" (str f))
     (f))
-  (tn-repl/refresh :after `start)
-  :done)
+  (tn-repl/refresh :after `start) :done)
