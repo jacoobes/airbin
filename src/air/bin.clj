@@ -48,8 +48,7 @@
    :biff/malli-opts #'malli-opts
    :biff.beholder/on-save #'on-save
    :biff.middleware/on-error #'ui/on-error
-   :biff.xtdb/tx-fns biff/tx-fns
-   :air.bin/chat-clients (atom #{})})
+   :biff.xtdb/tx-fns biff/tx-fns })
 
 (defonce system (atom {}))
 
